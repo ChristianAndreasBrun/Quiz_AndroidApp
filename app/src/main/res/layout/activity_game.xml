@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:backgroundTint="#959595"
+    android:backgroundTintMode="multiply"
+    android:padding="20dp"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/totals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Total"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rspuesta-1"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer1"
+            android:layout_marginHorizontal="20px">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rspuesta-2"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer2"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginTop="10dp">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rspuesta-3"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:onClick="SelectAnswer"
+            android:id="@+id/answer3"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginTop="10dp">
+        </Button>
+        <Button
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:onClick="SelectAnswer"
+            android:text="Rspuesta-4"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginTop="10dp">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elige una respuesta"
+        android:layout_above="@id/main_layout"
+        android:id="@+id/questions"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="25dp"
+        android:textStyle="bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+    />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_layout"
+        android:layout_marginHorizontal="150px"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#8FC814"
+        android:textColor="@color/darkBlue"
+        android:onClick="ChekAnswer"
+        android:text="Comprobar respuesta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+    />
+
+</RelativeLayout>
